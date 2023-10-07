@@ -7,7 +7,6 @@ import { toast } from "react-toastify";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
-  console.log(user);
 
   const handleLogout = () => {
     logOut()
@@ -25,7 +24,7 @@ const Navbar = () => {
         <NavLink to={"/"}>Home</NavLink>
       </li>
       <li>
-        <NavLink to={"/events"}>Events</NavLink>
+        <NavLink to={"/allEvents"}>Events</NavLink>
       </li>
       <li>
         <NavLink to={"/services"}>Services</NavLink>

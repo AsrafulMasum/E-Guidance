@@ -3,36 +3,36 @@
     "id": 1,
     "name": "Weddings",
     "details": "Plan and manage beautiful weddings for couples to celebrate their special day.",
-    "image": "https://example.com/weddings_image.jpg"
+    "image": "https://i.postimg.cc/d36p2D4m/wedding.jpg"
   },
   {
     "id": 2,
     "name": "Birthday Parties",
     "details": "Organize fun and memorable birthday parties for people of all ages.",
-    "image": "https://example.com/birthday_parties_image.jpg"
+    "image": "https://i.postimg.cc/Qd1gwvZv/birthday.jpg"
   },
   {
     "id": 3,
     "name": "Anniversaries",
     "details": "Create memorable anniversary events to celebrate milestones and love.",
-    "image": "https://example.com/anniversaries_image.jpg"
+    "image": "https://i.postimg.cc/Bb3t87VP/anniversaries.jpg"
   },
   {
     "id": 4,
     "name": "Engagement Parties",
     "details": "Plan engagement parties to mark the beginning of a beautiful journey for couples.",
-    "image": "https://example.com/engagement_parties_image.jpg"
+    "image": "https://i.postimg.cc/8cwk7pvx/engagement.jpg"
   },
   {
     "id": 5,
     "name": "Retirement Parties",
     "details": "Arrange retirement parties to celebrate a successful career and a new chapter in life.",
-    "image": "https://example.com/retirement_parties_image.jpg"
+    "image": "https://i.postimg.cc/tCCCL6Qb/retirement.jpg"
   },
   {
     "id": 6,
     "name": "Family Reunion",
     "details": "Organize gatherings for families to reconnect and celebrate their shared bonds.",
-    "image": "https://example.com/family_reunion_image.jpg"
+    "image": "https://i.postimg.cc/fbWKd51F/family.jpg"
   }
 ]
