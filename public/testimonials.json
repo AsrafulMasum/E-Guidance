@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "event_name": "Weddings",
+    "testimonial": "The team at XYZ Events did an exceptional job organizing our wedding. From the venue selection to the event coordination, everything was top-notch. Our guests were impressed, and the event was a huge success. Highly recommend!",
+    "rating": 5,
+    "image_url": "https://example.com/john_smith_image.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Emily Davis",
+    "event_name": "Anniversaries",
+    "testimonial": "Working with ABC Events for our anniversary celebration was a delight. They understood our vision, accommodated our requests, and executed flawlessly. The event was seamless, and we had a memorable time. Thank you, ABC Events!",
+    "rating": 4,
+    "image_url": "https://example.com/emily_davis_image.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Michael Johnson",
+    "event_name": "Family Reunion",
+    "testimonial": "Kudos to the team at Events R Us for making our family reunion a memorable experience. The attention to detail and coordination were outstanding. Our family had a wonderful time. Looking forward to future collaborations!",
+    "rating": 5,
+    "image_url": "https://example.com/michael_johnson_image.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Sarah Miller",
+    "event_name": "Weddings",
+    "testimonial": "I can't thank Events Unlimited enough for their exceptional planning and execution of our wedding. The decor was stunning, and the coordination was flawless. It was a night to remember, and our guests had a fantastic time. Highly recommended!",
+    "rating": 5,
+    "image_url": "https://example.com/sarah_miller_image.jpg"
+  },
+  {
+    "id": 5,
+    "name": "David Anderson",
+    "event_name": "Retirement Parties",
+    "testimonial": "We engaged Spark Events for a retirement party, and they exceeded our expectations. The team was engaged, and the activities were both fun and heartfelt. The event was a great send-off. Thank you, Spark Events!",
+    "rating": 4,
+    "image_url": "https://example.com/david_anderson_image.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Jessica Turner",
+    "event_name": "Birthday Parties",
+    "testimonial": "A big thank you to Bright Events for organizing my birthday party. The theme and decorations were perfect, and the entertainment was superb. All my guests had a blast. Great job, Bright Events!",
+    "rating": 5,
+    "image_url": "https://example.com/jessica_turner_image.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Alex Davis",
+    "event_name": "Weddings",
+    "testimonial": "Hats off to Stellar Events for making our wedding day special. The team was professional, and the event ran smoothly. We had a magical day. Thank you, Stellar Events!",
+    "rating": 5,
+    "image_url": "https://example.com/alex_davis_image.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Linda Thompson",
+    "event_name": "Engagement Parties",
+    "testimonial": "Our engagement party organized by Dreamy Events was a dream come true. The planning, coordination, and attention to detail were exceptional. It was a day we will cherish forever. Thank you, Dreamy Events!",
+    "rating": 5,
+    "image_url": "https://example.com/linda_thompson_image.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Paul Wilson",
+    "event_name": "Anniversaries",
+    "testimonial": "Big shoutout to Event Horizon for organizing our anniversary celebration. The logistics were seamless, and the atmosphere was perfect. Our guests were impressed, and the event was a major success. Looking forward to future events with Event Horizon!",
+    "rating": 4,
+    "image_url": "https://example.com/paul_wilson_image.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Grace Roberts",
+    "event_name": "Birthday Parties",
+    "testimonial": "Thank you, Fiesta Events, for organizing my birthday bash. The theme and decorations were perfect, and the entertainment was superb. All my guests had a blast. Great job, Fiesta Events!",
+    "rating": 5,
+    "image_url": "https://example.com/grace_roberts_image.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Mark Davis",
+    "event_name": "Retirement Parties",
+    "testimonial": "A huge thank you to Serene Retreats for organizing our retirement party. The venue was beautiful, the activities were engaging, and it was a wonderful send-off. Highly recommend Serene Retreats for special events!",
+    "rating": 5,
+    "image_url": "https://example.com/mark_davis_image.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Sophia Lee",
+    "event_name": "Weddings",
+    "testimonial": "Kudos to the team at Elegant Events for a successful wedding. The ambiance was perfect, and everything ran smoothly. It was a day we will always remember. Thank you, Elegant Events!",
+    "rating": 4,
+    "image_url": "https://example.com/sophia_lee_image.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Daniel Adams",
+    "event_name": "Weddings",
+    "testimonial": "Thanks to Grandeur Events for organizing our dream wedding. The event was well-planned, and the stage setup was impressive. Our families and friends were delighted. Excellent work, Grandeur Events!",
+    "rating": 5,
+    "image_url": "https://example.com/daniel_adams_image.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Amanda Baker",
+    "event_name": "Anniversaries",
+    "testimonial": "Our anniversary celebration planned by Everlasting Memories was perfect. The theme was exactly what we envisioned, and the event went smoothly. We'll cherish those memories forever. Thank you, Everlasting Memories!",
+    "rating": 5,
+    "image_url": "https://example.com/amanda_baker_image.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Kevin Lewis",
+    "event_name": "Family Reunion",
+    "testimonial": "A big shoutout to Jubilee Events for making our family reunion a success. The entertainment and activities were fantastic, and the turnout was incredible. We received great feedback from the family. Thank you, Jubilee Events!",
+    "rating": 4,
+    "image_url": "https://example.com/kevin_lewis_image.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Natalie Clark",
+    "event_name": "Weddings",
+    "testimonial": "A huge thank you to Runway Events for organizing our dream wedding. The event was a huge success, and the attention to detail was outstanding. Great job, Runway Events!",
+    "rating": 5,
+    "image_url": "https://example.com/natalie_clark_image.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Eric Carter",
+    "event_name": "Engagement Parties",
+    "testimonial": "Thanks to Star Events for organizing our engagement party. The event was classy, and the atmosphere was perfect for the occasion. Excellent work, Star Events!",
+    "rating": 4,
+    "image_url": "https://example.com/eric_carter_image.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Olivia Mitchell",
+    "event_name": "Birthday Parties",
+    "testimonial": "Hats off to Elite Events for planning my birthday party. The food, decor, and entertainment were exceptional. My friends and I had a blast. Thank you, Elite Events!",
+    "rating": 5,
+    "image_url": "https://example.com/olivia_mitchell_image.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Jake Roberts",
+    "event_name": "Birthday Parties",
+    "testimonial": "A big thank you to Party Planners for making my birthday party a memorable event. The theme and decorations were perfect, and everyone had a great time. Highly recommend Party Planners!",
+    "rating": 5,
+    "image_url": "https://example.com/jake_roberts_image.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Grace Johnson",
+    "event_name": "Family Reunion",
+    "testimonial": "Thank you, Reunion Specialists, for making our family reunion a success. The event was well-organized, and everyone had a fantastic time. Great job, Reunion Specialists!",
+    "rating": 5,
+    "image_url": "https://example.com/grace_johnson_image.jpg"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "TechCorp Solutions",
+    "level": "Gold Sponsor",
+    "logo_url": "https://example.com/techcorp_logo.png",
+    "website": "https://www.techcorpsolutions.com"
+  },
+  {
+    "id": 2,
+    "name": "InnovateX Technologies",
+    "level": "Silver Sponsor",
+    "logo_url": "https://example.com/innovatex_logo.png",
+    "website": "https://www.innovatextech.com"
+  },
+  {
+    "id": 3,
+    "name": "Global Innovations Inc.",
+    "level": "Platinum Sponsor",
+    "logo_url": "https://example.com/global_innovations_logo.png",
+    "website": "https://www.globalinnovationsinc.com"
+  },
+  {
+    "id": 4,
+    "name": "TechWave Solutions",
+    "level": "Gold Sponsor",
+    "logo_url": "https://example.com/techwave_logo.png",
+    "website": "https://www.techwavesolutions.com"
+  },
+  {
+    "id": 5,
+    "name": "Infiniti Technologies",
+    "level": "Silver Sponsor",
+    "logo_url": "https://example.com/infiniti_logo.png",
+    "website": "https://www.infinititech.com"
+  },
+  {
+    "id": 6,
+    "name": "EcoTech Industries",
+    "level": "Gold Sponsor",
+    "logo_url": "https://example.com/ecotech_logo.png",
+    "website": "https://www.ecotechindustries.com"
+  },
+  {
+    "id": 7,
+    "name": "SmartSolutions LLC",
+    "level": "Silver Sponsor",
+    "logo_url": "https://example.com/smartsolutions_logo.png",
+    "website": "https://www.smartsolutionsllc.com"
+  },
+  {
+    "id": 8,
+    "name": "InnoVision Labs",
+    "level": "Platinum Sponsor",
+    "logo_url": "https://example.com/innovision_logo.png",
+    "website": "https://www.innovisionlabs.com"
+  },
+  {
+    "id": 9,
+    "name": "GlobeTech Corp",
+    "level": "Gold Sponsor",
+    "logo_url": "https://example.com/globetech_logo.png",
+    "website": "https://www.globetechcorp.com"
+  },
+  {
+    "id": 10,
+    "name": "TechFusion Solutions",
+    "level": "Silver Sponsor",
+    "logo_url": "https://example.com/techfusion_logo.png",
+    "website": "https://www.techfusionsolutions.com"
+  }
+]

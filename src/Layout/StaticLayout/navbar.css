@@ -1,0 +1,10 @@
+ul li a.active{
+  background: none !important;
+  color: #00D3DE !important;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+ul li a:hover{
+  background: none !important;
+}
