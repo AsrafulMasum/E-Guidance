@@ -1,8 +1,23 @@
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
 import defaultUser from "./../../assets/user.png";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  console.log(user);
+
+  const handleLogout = () => {
+    logOut()
+      .then(() => {
+        toast.success("SignOut Successful.");
+      })
+      .catch((err) => {
+        toast.error(err.message);
+      });
+  };
 
   const navLinks = (
     <>
@@ -69,30 +84,36 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-
-          <Link className="btn btn-sm normal-case text-[#A68D5B]">Log In</Link>
-
-          <div className="dropdown dropdown-end">
-            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="w-10 rounded-full">
-                <img src={defaultUser} alt="User" />
+          {user ? (
+            <div className="dropdown dropdown-end">
+              <div className="flex justify-center items-center gap-2">
+                {user?.displayName && <p>{user.displayName}</p>}
+                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                  <div className="w-10 rounded-full">
+                    <img
+                      src={user?.photoURL ? user.photoURL : defaultUser}
+                      alt="User"
+                    />
+                  </div>
+                </label>
               </div>
-            </label>
-            <ul
-              tabIndex={0}
-              className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+              <ul
+                tabIndex={0}
+                className="mt-2 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+              >
+                <li>
+                  <button onClick={handleLogout}>Logout</button>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <Link
+              to={"/login"}
+              className="btn btn-sm normal-case text-[#A68D5B]"
             >
-              <li>
-                <a className="justify-between">
-                  Profile
-                  <span className="badge">New</span>
-                </a>
-              </li>
-              <li>
-                <a>Logout</a>
-              </li>
-            </ul>
-          </div>
+              Log In
+            </Link>
+          )}
         </div>
       </div>
     </div>

@@ -1,8 +1,10 @@
 import "./banner.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import { EffectFade } from 'swiper/modules';
 
 import "swiper/css";
+import 'swiper/css/effect-fade';
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
@@ -10,15 +12,15 @@ const Banner = () => {
   return (
     <div>
       <Swiper
-        modules={[Navigation, Pagination]}
-        spaceBetween={50}
+        modules={[Navigation, Pagination, EffectFade]}
+        effect="fade"
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
       >
-        <SwiperSlide id="slide1" className="min-h-[70vh] rounded-lg">
+        <SwiperSlide id="slide1" className="min-h-screen lg:min-h-[70vh] rounded-lg relative">
           <div className="absolute w-full h-full flex flex-col justify-center items-center text-center gap-2">
-            <p className="text-slate-300 font-bold text-lg italic">
+            <p className="text-slate-300 font-bold text-lg italic w-1/2">
               We are the Event Management Specialists
             </p>
             <h2 className="text-4xl font-semibold text-white w-1/2">
