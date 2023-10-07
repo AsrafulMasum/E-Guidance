@@ -1,7 +1,38 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
+import defaultUser from "./../../assets/user.png";
 
 const Navbar = () => {
+
+  const navLinks = (
+    <>
+      <li>
+        <NavLink to={"/"}>Home</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/events"}>Events</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/services"}>Services</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/places"}>Places</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/about"}>About</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/teams"}>Teams</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/gallery"}>Gallery</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/contact"}>Contact</NavLink>
+      </li>
+    </>
+  );
+
   return (
     <div>
       <div className="navbar bg-base-100">
@@ -27,66 +58,41 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
-                <NavLink to={"/"}>Home</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/events"}>Events</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/services"}>Services</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/places"}>Places</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/about"}>About</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/teams"}>Teams</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/gallery"}>Gallery</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/contact"}>Contact</NavLink>
-              </li>
+              {navLinks}
             </ul>
           </div>
-          <p className="text-xl font-bold text-[#946F5C]">E Guidance</p>
+          <p className="text-xl font-bold text-[#A68D5B]">E Guidance</p>
         </div>
 
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal">
-            <li>
-              <NavLink to={"/"}>Home</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/events"}>Events</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/services"}>Services</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/places"}>Places</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/about"}>About</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/teams"}>Teams</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/gallery"}>Gallery</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/contact"}>Contact</NavLink>
-            </li>
-          </ul>
+          <ul className="menu menu-horizontal">{navLinks}</ul>
         </div>
 
         <div className="navbar-end">
-          <a className="btn">Button</a>
+
+          <Link className="btn btn-sm normal-case text-[#A68D5B]">Log In</Link>
+
+          <div className="dropdown dropdown-end">
+            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+              <div className="w-10 rounded-full">
+                <img src={defaultUser} alt="User" />
+              </div>
+            </label>
+            <ul
+              tabIndex={0}
+              className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a className="justify-between">
+                  Profile
+                  <span className="badge">New</span>
+                </a>
+              </li>
+              <li>
+                <a>Logout</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

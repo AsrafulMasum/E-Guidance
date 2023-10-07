@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Navbar from "./StaticLayout/Navbar";
 
 const MainLayout = () => {
@@ -5,6 +6,7 @@ const MainLayout = () => {
     <div className="font-['AR_One_Sans']">
       <div className="max-w-screen-lg mx-auto">
         <Navbar></Navbar>
+        <Outlet></Outlet>
       </div>
     </div>
   );
