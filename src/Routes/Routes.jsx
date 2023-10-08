@@ -6,6 +6,9 @@ import LogIn from "../Pages/LogIn/LogIn";
 import SignUp from "../Pages/SignUp/SignUp";
 import EventsCardDetails from "../Pages/Home/Events/EventsCardDetails";
 import PrivateRoutes from "./PrivateRoutes";
+import EventsPage from "../Pages/EventsPage/EventsPage";
+import ServicesCardDetails from "../Pages/Home/Services/ServicesCardDetails";
+import ServicesPage from "../Pages/ServicesPage/ServicesPage";
 
 const Routes = createBrowserRouter([
   {
@@ -26,10 +29,34 @@ const Routes = createBrowserRouter([
         element: <SignUp></SignUp>,
       },
       {
+        path: "/allEvents",
+        element: (
+          <PrivateRoutes>
+            <EventsPage></EventsPage>
+          </PrivateRoutes>
+        ),
+      },
+      {
         path: "/events/:id",
         element: (
           <PrivateRoutes>
             <EventsCardDetails></EventsCardDetails>
+          </PrivateRoutes>
+        ),
+      },
+      {
+        path: "/allServices",
+        element: (
+          <PrivateRoutes>
+            <ServicesPage></ServicesPage>
+          </PrivateRoutes>
+        ),
+      },
+      {
+        path: "/services/:id",
+        element: (
+          <PrivateRoutes>
+            <ServicesCardDetails></ServicesCardDetails>
           </PrivateRoutes>
         ),
       },

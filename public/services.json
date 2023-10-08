@@ -3,84 +3,84 @@
     "id": 1,
     "name": "Event Planning and Coordination",
     "details": "Overall event concept development and design. Budget planning and management. Vendor selection and management (catering, décor, entertainment, etc.). Timeline and schedule management.",
-    "image": "event_planning_image.jpg",
+    "image": "https://i.postimg.cc/jdmVwzGR/wedding-planning.jpg",
     "price": "Starting at $1500"
   },
   {
     "id": 2,
     "name": "Venue Selection and Management",
     "details": "Venue scouting and selection based on event requirements. Negotiating contracts and terms with the venue. Managing logistics and set-up at the chosen venue.",
-    "image": "venue_selection_image.jpg",
+    "image": "https://i.postimg.cc/zDdY5m7b/vanue.jpg",
     "price": "Starting at $800"
   },
   {
     "id": 3,
     "name": "Catering and Food Services",
     "details": "Menu planning and customization based on event type and preferences. Coordination with catering companies or chefs. Food presentation and service during the event.",
-    "image": "catering_image.jpg",
-    "price": "Starting at $25 per person"
+    "image": "https://i.postimg.cc/Pqdwm8wR/catering.jpg",
+    "price": "Starting at $25/person"
   },
   {
     "id": 4,
     "name": "Décor and Design",
     "details": "Event theme and design conceptualization. Decoration selection, setup, and arrangement. Floral arrangements, lighting, table settings, etc.",
-    "image": "decor_image.jpg",
+    "image": "https://i.postimg.cc/T1bVkvY7/decor.jpg",
     "price": "Starting at $500"
   },
   {
     "id": 5,
     "name": "Entertainment and Music",
     "details": "Booking and coordination of entertainment acts (bands, DJs, performers). Music selection and playlist creation based on event theme and audience. AV equipment rental and setup.",
-    "image": "entertainment_image.jpg",
+    "image": "https://i.postimg.cc/766JR8X1/couple-dance.jpg",
     "price": "Starting at $800"
   },
   {
     "id": 6,
     "name": "Invitation and RSVP Management",
     "details": "Design and distribution of invitations (physical or digital). RSVP tracking and guest list management.",
-    "image": "invitation_image.jpg",
+    "image": "https://i.postimg.cc/J4WZ1gh8/invitation.jpg",
     "price": "Starting at $300"
   },
   {
     "id": 7,
     "name": "Event Staffing and Coordination",
     "details": "Hiring and managing event staff (ushers, security, waitstaff, etc.). Staff training and event day coordination.",
-    "image": "event_staffing_image.jpg",
+    "image": "https://i.postimg.cc/KYYt6M8g/event-staff.jpg",
     "price": "Starting at $400"
   },
   {
     "id": 8,
     "name": "Photography and Videography",
     "details": "Hiring professional photographers and videographers. Capturing event moments and editing the footage.",
-    "image": "photography_image.jpg",
+    "image": "https://i.postimg.cc/8kwN5fpC/photography-married-couple.jpg",
     "price": "Starting at $1000"
   },
   {
     "id": 9,
     "name": "Event Marketing and Promotion",
     "details": "Event promotion through various channels (social media, email marketing, etc.). Creating promotional materials (posters, flyers, banners).",
-    "image": "event_marketing_image.jpg",
+    "image": "https://i.postimg.cc/rpzQSbWb/marketing.jpg",
     "price": "Starting at $500"
   },
   {
     "id": 10,
     "name": "Post-Event Evaluation and Analysis",
     "details": "Gathering feedback from attendees. Analyzing the success of the event and identifying areas for improvement. Budget reconciliation and financial analysis.",
-    "image": "post_event_evaluation_image.jpg",
+    "image": "https://i.postimg.cc/nzjBzf7F/feedback.jpg",
     "price": "Starting at $300"
   },
   {
     "id": 11,
     "name": "Themed Parties and Special Events",
     "details": "Planning and organizing themed parties (e.g., costume parties, retro-themed events). Specialty events like weddings, anniversaries, birthdays, and graduations.",
-    "image": "themed_parties_image.jpg",
+    "image": "https://i.postimg.cc/8cC8Wwpz/themed.jpg",
     "price": "Starting at $600"
   },
   {
     "id": 12,
     "name": "Event Logistics and Transportation",
     "details": "Coordinating transportation for guests if needed. Managing event logistics, including parking and traffic management.",
-    "image": "event_logistics_image.jpg",
+    "image": "https://i.postimg.cc/NfgFCwMK/parking.jpg",
     "price": "Starting at $200"
   }
 ]

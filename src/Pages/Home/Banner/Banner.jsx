@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -62,40 +63,78 @@ const Banner = () => {
             <h2 className="text-4xl font-semibold text-white w-1/2">
               WE PERSONALIZE YOUR WEDDING EVENTS
             </h2>
-            <button className="btn normal-case px-6">View Events</button>
+            <Link to={"/allEvents"} className="btn normal-case px-6">
+              View Events
+            </Link>
           </div>
         </SwiperSlide>
         <SwiperSlide id="slide2" className="min-h-[70vh] rounded-lg">
-          <div className="absolute w-full h-full flex flex-col justify-center items-center text-center gap-2">
+          <div
+            data-aos="zoom-out-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="absolute w-full h-full flex flex-col justify-center items-center text-center gap-2"
+          >
             <p className="text-slate-300 font-bold text-lg italic">
               We are the Event Management Specialists
             </p>
             <h2 className="text-4xl font-semibold text-white w-1/2">
               WE PERSONALIZE YOUR FAMILY EVENTS
             </h2>
-            <button className="btn normal-case px-6">View Events</button>
+            <Link to={"/allEvents"} className="btn normal-case px-6">
+              View Events
+            </Link>
           </div>
         </SwiperSlide>
         <SwiperSlide id="slide3" className="min-h-[70vh] rounded-lg">
-          <div className="absolute w-full h-full flex flex-col justify-center items-center text-center gap-2">
+          <div
+            data-aos="zoom-out-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="absolute w-full h-full flex flex-col justify-center items-center text-center gap-2"
+          >
             <p className="text-slate-300 font-bold text-lg italic">
               We are the Event Management Specialists
             </p>
             <h2 className="text-4xl font-semibold text-white w-1/2">
               WE PERSONALIZE YOUR ENGAGEMENT EVENTS
             </h2>
-            <button className="btn normal-case px-6">View Events</button>
+            <Link to={"/allEvents"} className="btn normal-case px-6">
+              View Events
+            </Link>
           </div>
         </SwiperSlide>
         <SwiperSlide id="slide4" className="min-h-[70vh] rounded-lg">
-          <div className="absolute w-full h-full flex flex-col justify-center items-center text-center gap-2">
+          <div
+            data-aos="zoom-out-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="absolute w-full h-full flex flex-col justify-center items-center text-center gap-2"
+          >
             <p className="text-slate-300 font-bold text-lg italic">
               We are the Event Management Specialists
             </p>
             <h2 className="text-4xl font-semibold text-white w-1/2">
               WE PERSONALIZE YOUR ANNIVERSARY EVENTS
             </h2>
-            <button className="btn normal-case px-6">View Events</button>
+            <Link to={"/allEvents"} className="btn normal-case px-6">
+              View Events
+            </Link>
           </div>
         </SwiperSlide>
       </Swiper>

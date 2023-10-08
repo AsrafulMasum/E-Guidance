@@ -8,6 +8,8 @@ import { toast } from "react-toastify";
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
+  const userNameArr = user?.displayName.split(" ")
+
   const handleLogout = () => {
     logOut()
       .then(() => {
@@ -27,7 +29,7 @@ const Navbar = () => {
         <NavLink to={"/allEvents"}>Events</NavLink>
       </li>
       <li>
-        <NavLink to={"/services"}>Services</NavLink>
+        <NavLink to={"/allServices"}>Services</NavLink>
       </li>
       <li>
         <NavLink to={"/places"}>Places</NavLink>
@@ -86,7 +88,7 @@ const Navbar = () => {
           {user ? (
             <div className="dropdown dropdown-end">
               <div className="flex justify-center items-center gap-2">
-                {user?.displayName && <p>{user.displayName}</p>}
+                {user?.displayName && <p>{userNameArr[0]}</p>}
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                   <div className="w-10 rounded-full">
                     <img

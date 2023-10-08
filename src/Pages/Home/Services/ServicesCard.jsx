@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { FaRegMoneyBillAlt } from "react-icons/fa";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -24,38 +25,48 @@ AOS.init({
   anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
 
-const EventsCard = ({ data }) => {
+const ServicesCard = ({ data }) => {
   return (
-    <div
-      data-aos="fade-up"
-    >
-      <div className="w-full overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div data-aos="fade-up">
+      <div className="h-full w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
         <img
-          className="object-cover w-full h-56"
+          className="object-cover object-center w-full h-56"
           src={data?.image}
           alt="avatar"
         />
 
-        <div className="py-5 text-center">
-          <p
-            href="#"
-            className="block text-xl font-bold text-gray-800 dark:text-white"
-            tabIndex="0"
-            role="link"
-          >
+        <div className="flex justify-between items-center px-4 py-3 bg-gray-900">
+          <div>
+            <FaRegMoneyBillAlt className="text-2xl text-slate-300"></FaRegMoneyBillAlt>
+          </div>
+
+          <h1 className="mx-3 text-lg font-semibold text-white">
+            {data?.price}
+          </h1>
+        </div>
+
+        <div className="px-6 py-4">
+          <h1 className="text-xl font-semibold text-gray-800 dark:text-white">
             {data?.name}
+          </h1>
+
+          <p className="py-2 text-gray-700 dark:text-gray-400">
+            {data?.details.slice(0, 85)}...{" "}
+            <Link
+              to={`/services/${data?.id}`}
+              className="text-[#A68D5B] font-bold"
+            >
+              See More
+            </Link>
           </p>
-          <Link to={`/events/${data?.id}`} className="btn btn-sm mt-5">
-            See Details
-          </Link>
         </div>
       </div>
     </div>
   );
 };
 
-export default EventsCard;
+export default ServicesCard;
 
-EventsCard.propTypes = {
+ServicesCard.propTypes = {
   data: PropTypes.object.isRequired,
 };

@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import { useParams } from "react-router-dom";
-import { DataContext } from "../../../Provider/DataProvider";
+import EventsCard from "../Home/Events/EventsCard";
+import bg from "./../../assets/sectionbg.jpg";
+import { DataContext } from "../../Provider/DataProvider";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { toast } from "react-toastify";
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -26,18 +26,21 @@ AOS.init({
   anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
 
-const EventsCardDetails = () => {
-  const { id } = useParams();
-
+const EventsPage = () => {
   const { eventsData } = useContext(DataContext);
-
-  const currentEvent = eventsData?.find((data) => data.id === parseInt(id));
 
   return (
     <div>
-      <div className="overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 my-10">
-        <img
-          data-aos="fade-up"
+      <div
+        className="hero"
+        style={{
+          backgroundImage: `url(${bg})`,
+          backgroundAttachment: "fixed",
+        }}
+      >
+        <div className="hero-overlay bg-opacity-60"></div>
+        <div
+          data-aos="zoom-out-up"
           data-aos-offset="200"
           data-aos-delay="50"
           data-aos-duration="2000"
@@ -45,29 +48,28 @@ const EventsCardDetails = () => {
           data-aos-mirror="true"
           data-aos-once="false"
           data-aos-anchor-placement="top-center"
-          className="object-cover w-full h-full"
-          src={currentEvent?.image}
-          alt="Article"
-        />
-
-        <div className="p-6 flex justify-between items-center">
-          <div>
-            <p
-              className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-gray-300"
-              tabIndex="0"
-              role="link"
-            >
-              {currentEvent?.name}
-            </p>
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-              {currentEvent?.details}
-            </p>
+          className="hero-content text-center text-neutral-content py-20"
+        >
+          <div className="max-w-md">
+            <h1 className="mb-5 text-5xl font-bold">Events</h1>
           </div>
-          <button onClick={() => toast.success("Event has booked.")} className="btn px-8">Book This Event</button>
+        </div>
+      </div>
+
+      <div className="my-10">
+        <div className="text-center">
+          <h2 className="text-3xl font-semibold text-[#A68D5B] mb-10 pb-2 border-b-4 border-[#9AB551] inline-block">
+            Events That We Manage
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {eventsData?.map((data) => (
+            <EventsCard key={data.id} data={data}></EventsCard>
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-export default EventsCardDetails;
+export default EventsPage;
