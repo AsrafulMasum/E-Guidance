@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 import { AuthContext } from "../../Provider/AuthProvider";
@@ -9,6 +9,8 @@ const SignUp = () => {
   const [showPass2, setShowPass2] = useState(false);
 
   const { signUp, updateUser, logOut } = useContext(AuthContext);
+
+  const navigate = useNavigate()
 
   const handleSignUp = (e) => {
     e.preventDefault();
@@ -39,6 +41,7 @@ const SignUp = () => {
               toast.error(err.message);
             });
           logOut().then().catch();
+          navigate("/login")
         })
         .catch((err) => {
           toast.error(err.message);
@@ -47,7 +50,7 @@ const SignUp = () => {
   };
 
   return (
-    <section className="bg-white dark:bg-gray-900 rounded-lg">
+    <section className="bg-white dark:bg-gray-900 rounded-lg my-10">
       <div className="container flex items-center justify-center min-h-screen px-6 mx-auto">
         <form onSubmit={handleSignUp} className="w-full max-w-md">
           <div className="flex items-center justify-center mt-6">

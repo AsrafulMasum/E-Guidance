@@ -8,8 +8,6 @@ import { toast } from "react-toastify";
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
-  const userNameArr = user?.displayName.split(" ")
-
   const handleLogout = () => {
     logOut()
       .then(() => {
@@ -52,7 +50,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="navbar bg-base-100">
-        <div className="navbar-start">
+        <div className="navbar-start w-2/3">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -72,7 +70,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow bg-base-100 rounded-box w-52"
             >
               {navLinks}
             </ul>
@@ -88,7 +86,6 @@ const Navbar = () => {
           {user ? (
             <div className="dropdown dropdown-end">
               <div className="flex justify-center items-center gap-2">
-                {user?.displayName && <p>{userNameArr[0]}</p>}
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                   <div className="w-10 rounded-full">
                     <img
@@ -100,8 +97,10 @@ const Navbar = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="mt-2 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+                className="mt-2 z-50 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
               >
+                <p className="p-3">{user?.displayName && user.displayName}</p>
+
                 <li>
                   <button onClick={handleLogout}>Logout</button>
                 </li>

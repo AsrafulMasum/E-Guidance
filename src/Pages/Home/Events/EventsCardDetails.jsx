@@ -42,15 +42,12 @@ const EventsCardDetails = () => {
           data-aos-delay="50"
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-anchor-placement="top-center"
           className="object-cover w-full h-full"
           src={currentEvent?.image}
           alt="Article"
         />
 
-        <div className="p-6 flex justify-between items-center">
+        <div className="p-6 flex flex-col md:flex-row text-center md:text-left justify-between items-center gap-4">
           <div>
             <p
               className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-gray-300"
@@ -59,7 +56,7 @@ const EventsCardDetails = () => {
             >
               {currentEvent?.name}
             </p>
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            <p className="mt-2 text-sm md:w-5/6 lg:w-full text-gray-600 dark:text-gray-400">
               {currentEvent?.details}
             </p>
           </div>

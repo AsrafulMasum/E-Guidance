@@ -5,7 +5,7 @@ import Footer from "./StaticLayout/Footer";
 const MainLayout = () => {
   return (
     <div className="font-['AR_One_Sans']">
-      <div className="max-w-screen-lg mx-5 xl:mx-auto">
+      <div className="max-w-screen-lg mx-5 lg:px-5 xl:px-0 lg:mx-auto">
         <Navbar></Navbar>
         <Outlet></Outlet>
       </div>

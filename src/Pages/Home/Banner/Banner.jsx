@@ -44,7 +44,7 @@ const Banner = () => {
       >
         <SwiperSlide
           id="slide1"
-          className="min-h-screen lg:min-h-[70vh] rounded-lg relative"
+          className="min-h-[70vh] rounded-lg relative"
         >
           <div
             data-aos="zoom-out-up"
@@ -52,15 +52,12 @@ const Banner = () => {
             data-aos-delay="50"
             data-aos-duration="2000"
             data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-anchor-placement="top-center"
             className="absolute w-full h-full flex flex-col justify-center items-center text-center gap-2"
           >
-            <p className="text-slate-300 font-bold text-lg italic w-1/2">
+            <p className="text-slate-300 font-bold text-lg italic">
               We are the Event Management Specialists
             </p>
-            <h2 className="text-4xl font-semibold text-white w-1/2">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white px-10 md:px-0 md:w-1/2">
               WE PERSONALIZE YOUR WEDDING EVENTS
             </h2>
             <Link to={"/allEvents"} className="btn normal-case px-6">
@@ -75,15 +72,12 @@ const Banner = () => {
             data-aos-delay="50"
             data-aos-duration="2000"
             data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-anchor-placement="top-center"
             className="absolute w-full h-full flex flex-col justify-center items-center text-center gap-2"
           >
             <p className="text-slate-300 font-bold text-lg italic">
               We are the Event Management Specialists
             </p>
-            <h2 className="text-4xl font-semibold text-white w-1/2">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white px-10 md:px-0 md:w-1/2">
               WE PERSONALIZE YOUR FAMILY EVENTS
             </h2>
             <Link to={"/allEvents"} className="btn normal-case px-6">
@@ -98,15 +92,12 @@ const Banner = () => {
             data-aos-delay="50"
             data-aos-duration="2000"
             data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-anchor-placement="top-center"
             className="absolute w-full h-full flex flex-col justify-center items-center text-center gap-2"
           >
             <p className="text-slate-300 font-bold text-lg italic">
               We are the Event Management Specialists
             </p>
-            <h2 className="text-4xl font-semibold text-white w-1/2">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white px-10 md:px-0 md:w-1/2">
               WE PERSONALIZE YOUR ENGAGEMENT EVENTS
             </h2>
             <Link to={"/allEvents"} className="btn normal-case px-6">
@@ -121,15 +112,12 @@ const Banner = () => {
             data-aos-delay="50"
             data-aos-duration="2000"
             data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-anchor-placement="top-center"
             className="absolute w-full h-full flex flex-col justify-center items-center text-center gap-2"
           >
             <p className="text-slate-300 font-bold text-lg italic">
               We are the Event Management Specialists
             </p>
-            <h2 className="text-4xl font-semibold text-white w-1/2">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white px-10 md:px-0 md:w-1/2">
               WE PERSONALIZE YOUR ANNIVERSARY EVENTS
             </h2>
             <Link to={"/allEvents"} className="btn normal-case px-6">

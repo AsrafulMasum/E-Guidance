@@ -38,7 +38,6 @@ const EventsCard = ({ data }) => {
 
         <div className="py-5 text-center">
           <p
-            href="#"
             className="block text-xl font-bold text-gray-800 dark:text-white"
             tabIndex="0"
             role="link"

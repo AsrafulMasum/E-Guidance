@@ -28,7 +28,7 @@ AOS.init({
 const ServicesCard = ({ data }) => {
   return (
     <div data-aos="fade-up">
-      <div className="h-full w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+      <div className="h-full w-full overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
         <img
           className="object-cover object-center w-full h-56"
           src={data?.image}

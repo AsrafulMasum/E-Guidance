@@ -1,11 +1,15 @@
 import { useContext, useState } from "react";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { toast } from "react-toastify";
 
 const LogIn = () => {
   const [show, setShow] = useState(false);
+
+  const location = useLocation()
+
+  const navigate = useNavigate()
 
   const { signIn, googleSignIn, githubSignIn } = useContext(AuthContext);
 
@@ -19,6 +23,7 @@ const LogIn = () => {
     signIn(email, password)
       .then(() => {
         toast.success("Login Successful.");
+        navigate(location?.state ? location.state : "/")
       })
       .catch((err) => {
         toast.error(err.message);
@@ -29,6 +34,7 @@ const LogIn = () => {
     googleSignIn()
       .then(() => {
         toast.success("Google Log In Success.");
+        navigate(location?.state ? location.state : "/")
       })
       .catch((err) => {
         toast.error(err.message);
@@ -38,6 +44,7 @@ const LogIn = () => {
     githubSignIn()
       .then(() => {
         toast.success("Google Log In Success.");
+        navigate(location?.state ? location.state : "/")
       })
       .catch((err) => {
         toast.error(err.message);
@@ -46,10 +53,12 @@ const LogIn = () => {
 
   return (
     <div>
-      <div className="w-full max-w-sm p-6 m-auto mx-auto mt-10 bg-white rounded-lg shadow-md dark:bg-gray-800">
-        <div className="flex justify-center mx-auto">
-          <h2 className="text-2xl text-gray-300 font-semibold">Please Login</h2>
-        </div>
+      <div className="w-full max-w-sm p-6 m-auto mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800 my-10">
+        <div className="flex items-center justify-center mt-6">
+            <p className="w-1/3 pb-4 font-medium text-center text-gray-800 capitalize border-b-2 border-blue-500 dark:border-blue-400 dark:text-white">
+              Log In
+            </p>
+          </div>
 
         <form onSubmit={handleSignIn} className="mt-6">
           <div>
