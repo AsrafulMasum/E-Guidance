@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { DataContext } from "../../../Provider/DataProvider";
 
@@ -31,7 +31,12 @@ const EventsCardDetails = () => {
 
   const { eventsData } = useContext(DataContext);
 
-  const currentEvent = eventsData?.find((data) => data.id === parseInt(id));
+  const [currentEvent, setCurrentEvent] = useState({});
+
+  useEffect(() => {
+    const eventData = eventsData?.find((data) => data.id === parseInt(id));
+    setCurrentEvent(eventData);
+  }, [eventsData, id]);
 
   return (
     <div>
@@ -60,7 +65,12 @@ const EventsCardDetails = () => {
               {currentEvent?.details}
             </p>
           </div>
-          <button onClick={() => toast.success("Event has booked.")} className="btn px-8">Book This Event</button>
+          <button
+            onClick={() => toast.success("Event has booked.")}
+            className="btn px-8"
+          >
+            Book This Event
+          </button>
         </div>
       </div>
     </div>

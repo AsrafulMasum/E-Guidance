@@ -4,97 +4,97 @@
     "name": "Hotels and Ballrooms",
     "category": "Indoor",
     "description": "Hotels often have event spaces and ballrooms that can accommodate a range of social events, from weddings and galas to parties and receptions. These spaces are professionally designed and equipped to cater to events of various scales with amenities like audiovisual systems, seating arrangements, and catering services.",
-    "image_url": "https://example.com/hotels_ballrooms.jpg"
+    "image_url": "https://i.postimg.cc/Dwm48pB0/ballsroom.jpg"
   },
   {
     "id": 2,
     "name": "Event Halls or Event Centers",
     "category": "Indoor",
     "description": "Purpose-built event halls or centers are versatile spaces designed to host a variety of events such as weddings, parties, and exhibitions. They are equipped with features like customizable layouts, lighting options, and stage setups to suit the specific needs of different events. Event halls often provide ample space to accommodate a sizable number of guests.",
-    "image_url": "https://example.com/event_halls_centers.jpg"
+    "image_url": "https://i.postimg.cc/52dzXSQM/decorated-hall.jpg"
   },
   {
     "id": 3,
     "name": "Restaurants and Banquet Halls",
     "category": "Indoor",
     "description": "Many restaurants have private dining areas or banquet halls that can be reserved for parties, receptions, or other social gatherings. These spaces often offer catering services, customized menus, and a comfortable ambiance, making them suitable for various events, from birthday parties and anniversaries to corporate dinners and wedding receptions.",
-    "image_url": "https://example.com/restaurants_banquet_halls.jpg"
+    "image_url": "https://i.postimg.cc/xCvsJ1t0/restaurant.jpg"
   },
   {
     "id": 4,
     "name": "Country Clubs or Golf Clubs",
     "category": "Outdoor",
     "description": "Country clubs and golf clubs provide elegant and scenic settings for weddings, corporate events, and private parties. With spacious banquet halls, lush green surroundings, and a range of recreational activities, these venues offer a sophisticated and picturesque backdrop for events, making them ideal for formal gatherings and celebrations.",
-    "image_url": "https://example.com/country_clubs_golf_clubs.jpg"
+    "image_url": "https://i.postimg.cc/wBkD8RvY/country-clubs.jpg"
   },
   {
     "id": 5,
     "name": "Community Centers",
     "category": "Indoor",
     "description": "Local community centers often have event spaces suitable for social gatherings, meetings, workshops, and small conferences. These spaces are community-centric, providing a cost-effective solution for events, meetings, and workshops. They are easily accessible and designed to accommodate varying group sizes and event types.",
-    "image_url": "https://example.com/community_centers.jpg"
+    "image_url": "https://i.postimg.cc/brg5ZwL7/community-center.jpg"
   },
   {
     "id": 6,
     "name": "Parks and Gardens",
     "category": "Outdoor",
     "description": "Parks and botanical gardens offer beautiful outdoor venues suitable for picnics, outdoor parties, weddings, and casual social events. The natural surroundings, fresh air, and scenic beauty create a serene atmosphere, providing a unique setting for events. Some parks have designated areas with amenities for event hosting.",
-    "image_url": "https://example.com/parks_gardens.jpg"
+    "image_url": "https://i.postimg.cc/XYry1DMF/park-event.jpg"
   },
   {
     "id": 7,
     "name": "Historical Buildings or Estates",
     "category": "Indoor",
     "description": "Historical buildings, mansions, or estates offer a historic and charming setting for events such as weddings, parties, and galas. With their classic architecture, elegant interiors, and unique character, these venues provide a timeless backdrop for memorable events, giving a sense of grandeur and sophistication to any occasion.",
-    "image_url": "https://example.com/historical_buildings_estates.jpg"
+    "image_url": "https://i.postimg.cc/1zTBYNYR/historical-events.jpg"
   },
   {
     "id": 8,
     "name": "Nightclubs and Bars",
     "category": "Indoor",
     "description": "Nightclubs and bars are ideal for lively social events, parties, and celebrations, especially for younger audiences or events with a more relaxed atmosphere. They offer vibrant lighting, music, and an energetic ambiance, making them suitable for birthday parties, bachelorette parties, and other social gatherings.",
-    "image_url": "https://example.com/nightclubs_bars.jpg"
+    "image_url": "https://i.postimg.cc/c12ffStY/red-brown.jpg"
   },
   {
     "id": 9,
     "name": "Beach Resorts or Waterfront Venues",
     "category": "Outdoor",
     "description": "Beach resorts and waterfront venues provide the perfect setting for events like beach parties, weddings, or casual social gatherings with a scenic waterfront backdrop. The combination of sandy beaches, ocean views, and resort amenities offers a relaxed and picturesque atmosphere, creating a memorable experience for attendees.",
-    "image_url": "https://example.com/beach_resorts_waterfront_venues.jpg"
+    "image_url": "https://i.postimg.cc/wv2XYyws/sea.jpg"
   },
   {
     "id": 10,
     "name": "Rooftop Bars or Terraces",
     "category": "Outdoor",
     "description": "Rooftop bars or terraces are trendy venues providing a great view and ambiance for social gatherings, parties, or networking events. With their elevated location, these venues offer a unique perspective of the cityscape, making them popular for cocktail parties, corporate events, and upscale social gatherings.",
-    "image_url": "https://example.com/rooftop_bars_terraces.jpg"
+    "image_url": "https://i.postimg.cc/zXgynHTS/terrace.jpg"
   },
   {
     "id": 11,
     "name": "Cruise Ships or Boats",
     "category": "Outdoor",
     "description": "Renting a cruise ship or boat provides a unique experience for weddings, parties, or special celebrations on the water, offering stunning views and a memorable setting. Cruise ships and boats come equipped with event facilities, dining options, and entertainment, ensuring an unforgettable event in a nautical setting.",
-    "image_url": "https://example.com/cruise_ships_boats.jpg"
+    "image_url": "https://i.postimg.cc/QxssVBNy/boat.jpg"
   },
   {
     "id": 12,
     "name": "Yachts or Private Boats",
     "category": "Outdoor",
     "description": "Chartering a yacht or private boat is a luxurious option for intimate gatherings, offering an elegant and exclusive setting for weddings or special events. Yachts and private boats provide a lavish experience with spacious decks, lounges, dining areas, and scenic views, creating an opulent ambiance for any occasion.",
-    "image_url": "https://example.com/yachts_private_boats.jpg"
+    "image_url": "https://i.postimg.cc/HnV4dWcW/private-yatchs.jpg"
   },
   {
     "id": 13,
     "name": "Country Farms or Ranches",
     "category": "Outdoor",
     "description": "Farms or ranches offer a rustic and charming atmosphere, making them ideal for casual weddings, barnyard-themed parties, and outdoor celebrations. Surrounded by nature, these venues provide a laid-back and picturesque setting, allowing guests to enjoy a farm-to-table experience and various outdoor activities.",
-    "image_url": "https://example.com/country_farms_ranches.jpg"
+    "image_url": "https://i.postimg.cc/L5SXHN0y/farms.jpg"
   },
   {
     "id": 14,
     "name": "Mansion Gardens or Estates",
     "category": "Outdoor",
     "description": "Some mansions have beautiful gardens or outdoor spaces perfect for elegant weddings, receptions, and upscale social events. The manicured gardens, statuesque architecture, and refined ambiance of these venues create a sophisticated backdrop for memorable events, combining luxury and natural beauty in one setting.",
-    "image_url": "https://example.com/mansion_gardens_estates.jpg"
+    "image_url": "https://i.postimg.cc/fLmc2q95/mansion.jpg"
   }
 ]

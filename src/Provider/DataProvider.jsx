@@ -6,6 +6,7 @@ export const DataContext = createContext();
 const DataProvider = ({ children }) => {
   const [eventsData, setEventsData] = useState([]);
   const [servicesData, setServicesData] = useState([]);
+  const [placesData, setPlacesData] = useState([]);
 
   useEffect(() => {
     const loadEventsData = async () => {
@@ -17,17 +18,27 @@ const DataProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    const loadEventsData = async () => {
+    const loadServicesData = async () => {
       const res = await fetch("/services.json");
       const data = await res.json();
       setServicesData(data);
     };
-    loadEventsData();
+    loadServicesData();
+  }, []);
+
+  useEffect(() => {
+    const loadPlacesData = async () => {
+      const res = await fetch("/places.json");
+      const data = await res.json();
+      setPlacesData(data);
+    };
+    loadPlacesData();
   }, []);
 
   const allData = {
     eventsData,
-    servicesData
+    servicesData,
+    placesData,
   };
 
   return (

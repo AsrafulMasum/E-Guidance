@@ -9,6 +9,9 @@ import PrivateRoutes from "./PrivateRoutes";
 import EventsPage from "../Pages/EventsPage/EventsPage";
 import ServicesCardDetails from "../Pages/Home/Services/ServicesCardDetails";
 import ServicesPage from "../Pages/ServicesPage/ServicesPage";
+import PlacesCardDetails from "../Pages/Home/Places/PlacesCardDetails";
+import Venues from "../Pages/Venues/Venues";
+import ContactUsPage from "../Pages/ContactUsPage/ContactUsPage";
 
 const Routes = createBrowserRouter([
   {
@@ -57,6 +60,30 @@ const Routes = createBrowserRouter([
         element: (
           <PrivateRoutes>
             <ServicesCardDetails></ServicesCardDetails>
+          </PrivateRoutes>
+        ),
+      },
+      {
+        path: "/venues",
+        element: (
+          <PrivateRoutes>
+            <Venues></Venues>
+          </PrivateRoutes>
+        ),
+      },
+      {
+        path: "/places/:id",
+        element: (
+          <PrivateRoutes>
+            <PlacesCardDetails></PlacesCardDetails>
+          </PrivateRoutes>
+        ),
+      },
+      {
+        path: "/contact",
+        element: (
+          <PrivateRoutes>
+            <ContactUsPage></ContactUsPage>
           </PrivateRoutes>
         ),
       },

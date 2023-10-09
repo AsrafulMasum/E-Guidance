@@ -30,7 +30,7 @@ const Navbar = () => {
         <NavLink to={"/allServices"}>Services</NavLink>
       </li>
       <li>
-        <NavLink to={"/places"}>Places</NavLink>
+        <NavLink to={"/venues"}>Venues</NavLink>
       </li>
       <li>
         <NavLink to={"/about"}>About</NavLink>
@@ -109,7 +109,7 @@ const Navbar = () => {
           ) : (
             <Link
               to={"/login"}
-              className="btn btn-sm normal-case text-[#A68D5B]"
+              className="btn btn-sm btn-secondary normal-case"
             >
               Log In
             </Link>

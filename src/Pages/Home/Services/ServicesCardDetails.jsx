@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { DataContext } from "../../../Provider/DataProvider";
 import { useParams } from "react-router-dom";
 
@@ -31,7 +31,12 @@ const ServicesCardDetails = () => {
 
   const { servicesData } = useContext(DataContext);
 
-  const currentService = servicesData?.find((data) => data.id === parseInt(id));
+  const [currentService, setCurrentService] = useState({})
+
+  useEffect(() => {
+    const serviceData = servicesData?.find((data) => data.id === parseInt(id));
+    setCurrentService(serviceData)
+  }, [servicesData, id])
 
   return (
     <div
