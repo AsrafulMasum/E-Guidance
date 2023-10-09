@@ -21,12 +21,12 @@ const SignUp = () => {
     const password1 = form.get("password1");
     const password2 = form.get("password2");
 
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+    const passwordRegex = /^(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,}$/;
     if (password1 !== password2) {
       toast.error("Please confirm your password");
     } else if (!passwordRegex.test(password1)) {
       toast.error(
-        "Password must have 8 characters and one uppercase letter and one lowercase letter."
+        "Password must have 6 characters and one letter and one special character."
       );
     } else {
       e.currentTarget.reset();
