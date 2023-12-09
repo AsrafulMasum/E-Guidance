@@ -18,3 +18,12 @@ Click here for the live website link: [https://e-mania.web.app/](https://e-mania
   * If users want to go to a private page they need to login first. If they didn't have accounts they need to sign up first. After sign up they will redirects to the log in page & need to login for visiting the private page. after log in they will redirects to that specific page they want to visit.
 
   * If users want to logout they need to click on the users image on the navbar & find the logout button then they need to click on the logout button.
+
+  
+## 💻 Technologies that I used
+
+  <p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,tailwind,react,firebase" />
+  </a>
+</p>
