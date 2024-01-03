@@ -2,17 +2,19 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
+import { ImSpinner9 } from "react-icons/im";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const SignUp = () => {
   const [showPass1, setShowPass1] = useState(false);
   const [showPass2, setShowPass2] = useState(false);
 
-  const { signUp, updateUser, logOut } = useContext(AuthContext);
+  const { signUp, updateUser, logOut, loading, setLoading } = useContext(AuthContext);
 
   const navigate = useNavigate()
 
   const handleSignUp = (e) => {
+    setLoading(true)
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const userName = form.get("userName");
@@ -207,8 +209,12 @@ const SignUp = () => {
           </div>
 
           <div className="mt-6">
-            <button className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
-              Sign Up
+            <button className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 text-center">
+            {loading ? (
+                  <ImSpinner9 className="animate-spin text-lg text-center"></ImSpinner9>
+                ) : (
+                  "Sign Up"
+                )}
             </button>
 
             <div className="mt-6 text-center ">
