@@ -209,9 +209,9 @@ const SignUp = () => {
           </div>
 
           <div className="mt-6">
-            <button className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 text-center">
+            <button className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 flex justify-center">
             {loading ? (
-                  <ImSpinner9 className="animate-spin text-lg text-center"></ImSpinner9>
+                  <ImSpinner9 className="animate-spin text-lg"></ImSpinner9>
                 ) : (
                   "Sign Up"
                 )}

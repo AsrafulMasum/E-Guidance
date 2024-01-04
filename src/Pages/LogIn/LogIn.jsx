@@ -3,6 +3,7 @@ import { BsEye, BsEyeSlash } from "react-icons/bs";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { toast } from "react-toastify";
+import { ImSpinner9 } from "react-icons/im";
 
 const LogIn = () => {
   const [show, setShow] = useState(false);
@@ -11,9 +12,10 @@ const LogIn = () => {
 
   const navigate = useNavigate()
 
-  const { signIn, googleSignIn, githubSignIn } = useContext(AuthContext);
+  const { signIn, googleSignIn, githubSignIn, loading, setLoading } = useContext(AuthContext);
 
   const handleSignIn = (e) => {
+    setLoading(true)
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const email = form.get("email");
@@ -31,6 +33,7 @@ const LogIn = () => {
   };
 
   const googleLogin = () => {
+    setLoading(true)
     googleSignIn()
       .then(() => {
         toast.success("Google Log In Success.");
@@ -41,6 +44,7 @@ const LogIn = () => {
       });
   };
   const githubLogin = () => {
+    setLoading(true)
     githubSignIn()
       .then(() => {
         toast.success("Google Log In Success.");
@@ -106,7 +110,11 @@ const LogIn = () => {
 
           <div className="mt-6">
             <button className="w-full px-6 py-2.5 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-700 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">
-              Sign In
+            {loading ? (
+                  <ImSpinner9 className="animate-spin text-lg"></ImSpinner9>
+                ) : (
+                  "Sign Up"
+                )}
             </button>
           </div>
         </form>
